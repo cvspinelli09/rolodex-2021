@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import Logo from '../src/logo1.png'
+import Logo from '../src/logo1.png'
 import './App.css';
 
 import CardList from './componentes/card-list/card-list.componente.jsx';
@@ -33,7 +33,9 @@ class App extends Component {
       produto.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className="App">
-        
+        <div>
+        <img src={Logo} width='250'  alt='logo'/>
+        </div>
         <SearchBox 
           placeholder='procurar produtos'
           handleChange={this.handleChange}
